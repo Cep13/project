@@ -1,0 +1,38 @@
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 10px auto;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .description {
+    margin-left: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .cover {
+    width: 400px;
+    margin-top: 50px;
+  }
+  
+  .content {
+    line-height: 2;
+    text-align: justify;
+  }
+  
+  .link {
+    margin-top: 10px;
+  }
+  

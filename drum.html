@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://spng.pinpng.com/pngs/s/418-4181548_letter-d-png-d-logo-with-transparent-background.png">
+    <title>Drum</title>
+    <link rel="stylesheet" href="css/drum.css" />
+
+</head>
+<body>
+    <div id='drum'>
+        <button class="btn">Q</button>
+        <button class="btn">W</button>
+        <button class="btn">E</button>
+        <button class="btn">R</button>
+        <button class="btn">T</button>
+        <button class="btn">Y</button>
+        <button class="btn">U</button>
+        <button class="btn">I</button>
+    </div>
+
+    <audio id="Q" src="assets/Bass-Drum-Hit-Level-6c.mp3"></audio>
+    <audio id="W" src="assets/Drum-Sticks-Hit-G.mp3"></audio>
+    <audio id="E" src="assets/Floor-Tom-Drum-Hit-Level-6B.mp3"></audio>
+    <audio id="R" src="assets/Hi-Hat-Foot-Pedal-Close-A.mp3"></audio>
+    <audio id="T" src="assets/Medium-Tom-Drum-Hit-Level-7B.mp3"></audio>
+    <audio id="Y" src="assets/Small-Tom-Drum-Hit-Level-6A.mp3"></audio>
+    <audio id="U" src="assets/Splash-Cymbal-Hit-Short.mp3"></audio>
+    <audio id="I" src="assets/Snare-Drum-Hit-Level-6b.mp3"></audio>
+
+    <script>
+        document.addEventListener("keydown", logKey);
+
+        function logKey(e) {
+            if(e.keyCode===81){
+                document.getElementById("Q").play();
+                document.getElementById("btn").style.backgroundColor = "blue";
+            }else if(e.keyCode===87){
+                document.getElementById("W").play();
+            }else if(e.keyCode===69){
+                document.getElementById("E").play();
+            }else if(e.keyCode===82){
+                document.getElementById("R").play();
+            }else if(e.keyCode===84){
+                document.getElementById("T").play();
+            }else if(e.keyCode===82){
+                document.getElementById("Y").play();
+            }else if(e.keyCode===85){
+                document.getElementById("U").play();
+            }else{
+                document.getElementById("I").play();
+            }
+        }
+
+    </script>
+
+</body>
+</html>
